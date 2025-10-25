@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@ant-design/icons": "^5.6.1",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  },
+  "scripts": {
+    "start:all": "concurrently \"npm run dev --prefix backend\" \"npm start --prefix frontend\""
+  }
+}

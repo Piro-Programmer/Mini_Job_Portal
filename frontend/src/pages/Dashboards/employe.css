@@ -1,0 +1,190 @@
+.employer-dashboard {
+  position: relative;
+  padding: 40px 60px;
+  min-height: 100vh;
+  background: #f9fafc; /* Light background instead of image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1a1a1a; /* Dark text for better contrast */
+}
+
+.employer-dashboard .dashboard-header .header-actions .profile-avatar {
+  color: green;
+}
+
+/* Remove overlay */
+.employer-dashboard::before {
+  content: none !important;
+}
+
+/* Keep all content above */
+.employer-dashboard > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header styling */
+.dashboard-header {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  color: #1a1a1a;
+}
+
+.dashboard-title {
+  color: #1a1a1a !important;
+  text-shadow: none;
+}
+
+.dashboard-subtitle {
+  color: #555 !important;
+  font-size: 15px;
+}
+
+.tabs-wrap {
+  width: 100%;
+}
+
+/* Tabs */
+.fancy-tabs .ant-tabs-nav {
+  background: #fff;
+  border-radius: 12px;
+  padding: 6px 16px;
+  border: 1px solid #ddd;
+}
+
+.fancy-tabs .ant-tabs-tab {
+  color: #333;
+  font-weight: 500;
+}
+
+.fancy-tabs .ant-tabs-tab-active {
+  color: #7c3aed !important;
+}
+
+.fancy-tabs .ant-tabs-ink-bar {
+  background: #7c3aed;
+}
+
+/* Statistic cards */
+.glass-stat {
+  background: #fff !important;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px !important;
+  color: #1a1a1a;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.glass-stat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(124, 58, 237, 0.15);
+}
+
+.stat-label {
+  color: #555;
+  font-size: 14px;
+}
+
+.stat-value {
+  color: #1a1a1a !important;
+}
+
+/* Job cards */
+.job-card {
+  border-radius: 18px !important;
+  background: #fff !important;
+  border: 1px solid #ddd;
+  color: #1a1a1a;
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(79, 70, 229, 0.15);
+}
+
+/* Create job and applicants cards */
+.create-job-card,
+.job-applicants-card {
+  background: #fff !important;
+  border: 1px solid #ddd;
+  color: #1a1a1a;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 20px !important;
+}
+
+/* Typography */
+.ant-typography,
+.muted-line,
+.stat-label,
+.ant-statistic-title,
+.ant-statistic-content-value {
+  color: #1a1a1a !important;
+}
+
+/* Buttons */
+.btn-glow {
+  background: linear-gradient(135deg, #7c3aed, #4f46e5);
+  color: #fff !important;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(124, 58, 237, 0.3);
+  transition: 0.3s ease;
+}
+
+.btn-glow:hover {
+  box-shadow: 0 0 25px rgba(124, 58, 237, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #4f46e5 !important;
+  border: 1px solid #7c3aed;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: rgba(124, 58, 237, 0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .employer-dashboard {
+    padding: 20px;
+  }
+  .dashboard-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Profile avatar styles */
+.profile-avatar {
+  cursor: pointer;
+  background: #fff;
+  border: 2px solid #7c3aed;
+  transition: 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3);
+}
+
+.tab-content-wrap .visible-text a {
+  color: #4f46e5;
+}
+
+/* Display job cards vertically (clean layout) */
+.jobs-grid {
+  display: flex !important;
+  flex-direction: column;
+  gap: 24px;
+}
