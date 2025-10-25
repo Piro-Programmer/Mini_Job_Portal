@@ -2,11 +2,11 @@
   position: relative;
   padding: 40px 60px;
   min-height: 100vh;
-  background: #f9fafc; /* Light background instead of image */
+  background: #f9fafc;
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #1a1a1a; /* Dark text for better contrast */
+  color: #1a1a1a;
 }
 
 .employer-dashboard .dashboard-header .header-actions .profile-avatar {
@@ -182,7 +182,6 @@
   color: #4f46e5;
 }
 
-/* Display job cards vertically (clean layout) */
 .jobs-grid {
   display: flex !important;
   flex-direction: column;

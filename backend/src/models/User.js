@@ -31,14 +31,3 @@ const User = sequelize.define('User', {
 );
 
 module.exports = User;
-
-
-
-
-// {
-//   hooks: {
-//     beforeCreate: async (user) => {
-//       user.password = await bcrypt.hash(user.password, 10);
-//     },
-//   },
-// }

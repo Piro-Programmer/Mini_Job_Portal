@@ -1,7 +1,11 @@
 .hero-section {
   position: relative;
   padding: 80px 16px;
-  background: linear-gradient(135deg, hsl(167.68deg 84% 67%), hsl(241.85deg 84% 73%));
+  background: linear-gradient(
+    135deg,
+    hsl(167.68deg 84% 67%),
+    hsl(241.85deg 84% 73%)
+  );
   text-align: center;
 }
 
@@ -64,7 +68,7 @@
 .btn-secondary {
   background-color: #e5e7eb;
   color: #111827;
-
+}
 .btn-secondary:hover {
   background-color: #d1d5db;
 }
